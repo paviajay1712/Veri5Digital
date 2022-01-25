@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input[type='text'],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type='submit'] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type='submit']:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <form
+        method="post"
+        action="https://sandbox.veri5digital.com/video-id-kyc/_initWebVIKYC"
+      >
+        <label for="fname">Client Code</label>
+        <input type="text" id="client_code" name="client_code" value="" />
+
+        <label for="fname">Api Key</label>
+        <input type="text" id="api_key" name="api_key" value="" />
+
+        <label for="fname">Redirect URL</label>
+        <input type="text" id="redirect_url" name="redirect_url" value="" />
+
+        <label for="fname">Request ID</label>
+        <input type="text" id="request_id" name="request_id" value="" />
+
+        <label for="fname">Stan ID</label>
+        <input type="text" id="stan" name="stan" value="" />
+
+        <label for="fname">Hash</label>
+        <input type="text" id="hash" name="hash" value="" />
+
+        <label for="fname">OTP Required</label>
+        <input type="text" id="otp_required" name="otp_required" value="N" />
+
+        <label for="fname">Mobile</label>
+        <input type="text" id="mobile" name="mobile" value="" />
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
